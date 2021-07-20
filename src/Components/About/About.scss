@@ -1,0 +1,26 @@
+.about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-top: 100px;
+    }
+
+    .info {
+        max-width: 800px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        margin-top: -30px;
+        border-radius: 5px;
+        padding: 50px;
+
+        p {
+            font-size: 19px;
+            text-align: center;
+
+        }
+    }
+}

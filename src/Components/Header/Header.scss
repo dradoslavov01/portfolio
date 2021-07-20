@@ -1,0 +1,105 @@
+.header {
+    background-color: #2D314D;
+    height: 70px;
+
+    .portfolio {
+        display: none;
+    }
+
+    .mobileNavbar {
+        display: none;
+    }
+
+    .desktopNavbar {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style-type: none;
+        max-width: 600px;
+        height: 100%;
+
+        li {
+            padding: 20px 8px;
+            cursor: pointer;
+            height: 100%;
+
+
+            &:hover {
+                background-color: #454a69;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 19px;
+                color: #ffff;
+                font-weight: 500;
+            }
+        }
+
+    }
+
+    .menuIcon {
+        display: none;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+
+        .portfolio {
+            display: block;
+            font-size: 23px;
+            font-style: italic;
+            color: #ffff;
+            font-weight: 500;
+            margin-left: 10px;
+        }
+
+        .desktopNavbar {
+            display: none;
+        }
+
+        .mobileNavbar {
+            display: block;
+            list-style-type: none;
+            background-color: #2D314D;
+            width: 80%;
+            height: 200px;
+            position: absolute;
+            top: 61px;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            text-align: center;
+
+            li {
+                height: 40px;
+                margin: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 18px;
+                    padding: 8px;
+
+                    &:hover {
+                        background-color: #454a69;
+                    }
+                }
+            }
+        }
+
+        .menuIcon {
+            display: block;
+            color: white;
+            font-size: 47px;
+            cursor: pointer;
+        }
+    }
+}
