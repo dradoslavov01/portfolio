@@ -2,6 +2,7 @@ import './Education.scss';
 
 
 import { FC } from 'react'
+import images from '../images';
 
 const Education: FC = () => {
     return (
@@ -21,6 +22,23 @@ const Education: FC = () => {
                     <li><strong>ReactJS</strong>(Working with remote REST services, Knowledge of React and JSX, Component-based applications)</li>
                     <li><strong>JS Back-End</strong>(Web Server, knowledge of the HTTP protocol, Working with non-relational databases(MongoDB), Create server application with Express, Authentication and Authorization with JWT)</li>
                 </ul>
+            </div>
+            <div className="skills">
+                <h2>Skills</h2>
+                <div>
+                    {images[0].map(img => {
+                        return (
+                            <img src={img} alt="img" />
+                        )
+                    })}
+                </div>
+                <div>
+                    {images[1].map(img => {
+                        return (
+                            <img src={img} alt="img" />
+                        )
+                    })}
+                </div>
             </div>
         </div>
     )

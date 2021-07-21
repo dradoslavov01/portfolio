@@ -8,7 +8,7 @@
         color: #323232;
         margin-left: 20px;
         margin-top: 100px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 
     .info {
@@ -22,25 +22,51 @@
             font-size: 19px;
             font-family: brandon-grotesque;
         }
+
     }
 
-    .courses {
+    .skills {
         margin-bottom: 100px;
 
-        ul {
+        div {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
-            max-width: 900px;
-            margin-left: 50px;
+            align-items: center;
+            margin-left: 30px;
+            margin-bottom: 30px;
 
+            p {
+                font-size: 23px;
+            }
 
-            li {
-                max-width: 400px;
-                margin-bottom: 40px;
+            img {
+                width: 125px;
+                height: 100px;
+                margin-right: 10px;
+                margin-bottom: 10px;
             }
         }
     }
+
+}
+
+
+.courses {
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 900px;
+        margin-left: 50px;
+
+
+        li {
+            max-width: 400px;
+            margin-bottom: 40px;
+        }
+    }
+
 }
 
 @media screen and (max-width:950px) {
@@ -48,6 +74,19 @@
         .courses {
             ul {
                 flex-direction: column;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:699px) {
+    .education {
+        .skills {
+            div {
+                img {
+                    width: 100px;
+                    height: 80px;
+                }
             }
         }
     }

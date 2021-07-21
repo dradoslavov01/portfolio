@@ -130,3 +130,17 @@
     }
 }
 
+@media screen and (max-width:699px) {
+    .about {
+        .projects {
+            .project {
+
+                img {
+                    width: 250px;
+                    height: 250px;
+                }
+
+            }
+        }
+    }
+}
