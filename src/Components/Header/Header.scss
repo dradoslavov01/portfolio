@@ -1,6 +1,6 @@
 .header {
     background-color: #2D314D;
-    height: 70px;
+    height: 80px;
 
     .portfolio {
         display: none;
@@ -8,6 +8,7 @@
 
     .mobileNavbar {
         display: none;
+        z-index: 3;
     }
 
     .desktopNavbar {
@@ -19,7 +20,7 @@
         height: 100%;
 
         li {
-            padding: 20px 8px;
+            padding: 25px 8px;
             cursor: pointer;
             height: 100%;
 
@@ -49,7 +50,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 60px;
+        height: 80px;
 
         .portfolio {
             display: block;
@@ -71,7 +72,7 @@
             width: 80%;
             height: 200px;
             position: absolute;
-            top: 61px;
+            top: 81px;
             margin-left: auto;
             margin-right: auto;
             left: 0;

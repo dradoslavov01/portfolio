@@ -1,0 +1,27 @@
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #2D314D;
+    height: 70px;
+    position: relative;
+
+
+    p {
+        color: rgb(197, 195, 195);
+        font-size: 17px;
+    }
+
+    .social-media-icons {
+        width: 80px;
+        display: flex;
+        justify-content: space-between;
+
+        .icons {
+            width: 35px;
+            height: 35px;
+            color: rgb(197, 195, 195);
+            cursor: pointer;
+        }
+    }
+}

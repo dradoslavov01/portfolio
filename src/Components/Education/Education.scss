@@ -1,0 +1,54 @@
+.education {
+    display: flex;
+    flex-direction: column;
+
+
+    h2 {
+        font-size: 28px;
+        color: #323232;
+        margin-left: 20px;
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+
+    .info {
+        max-width: 800px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 50px 20px;
+        margin: 0px 10px;
+        border-radius: 5px;
+
+        p {
+            font-size: 19px;
+            font-family: brandon-grotesque;
+        }
+    }
+
+    .courses {
+        margin-bottom: 100px;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 900px;
+            margin-left: 50px;
+
+
+            li {
+                max-width: 400px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:950px) {
+    .education {
+        .courses {
+            ul {
+                flex-direction: column;
+            }
+        }
+    }
+}
