@@ -15,7 +15,7 @@
         max-width: 800px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         padding: 50px 20px;
-        margin: 0px 10px;
+        margin: 0px 20px;
         border-radius: 5px;
 
         p {
@@ -27,12 +27,13 @@
 
     .skills {
         margin-bottom: 100px;
+        margin-top: -30px;
 
         div {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            margin-left: 30px;
+            margin-left: 40px;
             margin-bottom: 30px;
 
             p {
@@ -82,6 +83,7 @@
 @media screen and (max-width:699px) {
     .education {
         .skills {
+            margin-top: -60px;
             div {
                 img {
                     width: 100px;

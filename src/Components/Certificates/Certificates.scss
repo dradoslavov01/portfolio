@@ -1,0 +1,74 @@
+.certificates {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 230px;
+    position: relative;
+
+    h2 {
+        position: absolute;
+        font-size: 28px;
+        color: #323232;
+        left: 140px;
+    }
+
+    div {
+        position: relative;
+        transition: all 0.25s;
+        margin-top: 100px;
+
+        &:hover {
+            background-color: #000000d1;
+        }
+
+        &:hover>.open {
+            display: block;
+        }
+
+
+
+        img {
+            width: 250px;
+            height: 350px;
+            margin-bottom: 40px;
+            cursor: pointer;
+            margin-bottom: -4px;
+            transition: all 0.25s;
+
+
+            &:hover {
+                opacity: 0.1;
+            }
+
+        }
+
+        .open {
+            display: none;
+            position: absolute;
+            top: 45%;
+            left: 27%;
+            color: white;
+            pointer-events: none;
+        }
+    }
+
+}
+
+
+@media screen and (max-width:990px) {
+    .certificates {
+        h2 {
+            left: 80px;
+        }
+    }
+}
+
+
+@media screen and (max-width:699px) {
+    .certificates {
+        h2 {
+            left: 30px;
+        }
+    }
+}
